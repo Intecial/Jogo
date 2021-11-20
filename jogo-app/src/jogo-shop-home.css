@@ -1,4 +1,5 @@
 @import 'jogo-shop-nav.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,900;1,300&display=swap');
 
 .vid-nature{
     margin-top: 0;
@@ -6,9 +7,69 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: none;
-    border: none;
     margin-bottom: 0;
+    object-fit: cover;
+    z-index: 1000;
+    opacity: 0.7;
+}
+
+.title-text{
+    position:absolute;
+    left: 10%;
+    top: 100%;
+    font-family: 'Popins', 'Courier New', Courier, monospace;
+    z-index: 0;
+}
+
+.title-text .why-btn{
+    font-size: 30px;
+    font-weight: 700;
+    width: 40%;
+    height: 60px;
+    font-weight: 700px;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    background-color: none;
+    opacity: 0.9;
+    color: #1D3C26;
+}
+
+.title-text .donate-btn{
+    font-size: 30px;
+    width: 40%;
+    height: 60px;
+    margin-left: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    background-color: none;
+    align-items: center;
+    opacity: 0.9;
+    color: #1D3C26;
+}
+
+.donate-btn:hover{
+    background-color: #1D3C26;
+    color: #fff;
+}
+
+.why-btn:hover{
+    background-color: #1D3C26;
+    color: #fff;
+}
+
+.title-text .subtitle{
+    font-style: italic;
+    font-size: 50px;
+    color: #EADFCE;
+    opacity: 0.8;
+}
+
+.title-text .bigger-title{
+    text-transform: uppercase;
+    font-size: 90px;
+    font-weight: 900;
+    color: #fff;
+    opacity: 0.8;
 }
 
 body{
@@ -167,7 +228,7 @@ body{
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, #fff 100%);
     */
     cursor: pointer;
-    z-index: 8;
+    z-index: 10000;
     rotate: 90deg;
 }
 
