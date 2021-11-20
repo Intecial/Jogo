@@ -3,7 +3,7 @@ import logo from './logo.png';
 class NavBar extends React.Component {
     logoSize = {
         width: 150,
-        height: 100
+        height: 90
     }
     render() { 
         return (<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -21,9 +21,6 @@ class NavBar extends React.Component {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
             </li>
           </ul>
         </div>
