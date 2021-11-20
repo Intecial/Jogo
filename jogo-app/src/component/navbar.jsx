@@ -1,30 +1,45 @@
 import React, { Component } from 'react';
-import logo from './logo.png';
+import user from '../images/user.PNG';
+import logo from '../images/jogo-logo.PNG';
+import cart from '../images/cart.PNG';
+import '../jogo-shop-nav.css';
+import '../jogo-shop-home.css';
 class NavBar extends React.Component {
-    logoSize = {
-        width: 150,
-        height: 90
-    }
     render() { 
-        return (<nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img src={ logo } style={this.logoSize}></img>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-          </ul>
-        </div>
-      </nav>);
+        return (
+        <>
+        <nav style={{
+            position: "sticky",
+            top: 0,
+            left: 0,
+            width: "100%" ,
+            marginBottom: 0
+        }}>
+            <div className="shop-nav"> 
+                <img src={ logo } className="jogo-logo" alt=""></img>
+                <div className="nav-items">
+                    <div className="search">
+                        <input type="text" className="search-box" placeholder="  what do you want to buy ?"></input>
+                        <button className="search-button">search</button>
+                    </div>
+                    <div className="user-points-box">
+                        <span className="points">0</span> <span className="point-text">points</span>
+                    </div>
+                    <a href="#"><img src={ user } alt=""></img></a>
+                    <a href="#"><img src={ cart } alt=""></img></a>
+                    <a href="#"><img src='...' alt=""></img></a>
+                </div>
+            </div>
+            <div className="sub-shop-nav">
+                <ul className="links-container">
+                    <li className="link-item"><a href="#" className="link">home</a></li>
+                    <li className="link-item"><a href="#" className="link">recycled</a></li>
+                    <li className="link-item"><a href="#" className="link">eco</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        </>);
     }
 }
  

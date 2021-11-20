@@ -1,17 +1,29 @@
 import React, { Component } from 'react';
-import products from './exampledata';
 import Card from './card';
-import './cards.css';
-const Cards = ({src}) =>
+import '../jogo-shop-nav.css';
+import '../jogo-shop-home.css';
+import arrow from '../images/arrow.png';
+const Cards = () =>
 {
     
     return (
-        <div className="shops">
-            {products.map((item) => (
-                    <Card item={item.img} key={item.id}></Card>
-                )
-            )}
+        <>
+        <section class="product">
+        <h2 class="product-category">best selling</h2>
+
+        <button class="pre-btn"><img src={arrow} alt=""></img> </button>
+        <button class="post-btn"><img src={arrow} alt=""></img> </button>
+        <div class="product-container">
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
         </div>
+
+        </section>
+        </>
     )
 }
  
