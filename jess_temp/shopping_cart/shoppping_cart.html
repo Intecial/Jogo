@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart UI</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="shopping_cart.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+</head>
+<body>
+   <div class="CartContainer">
+   	   <div class="Header">
+   	   	<h3 class="Heading">Shopping Cart</h3>
+   	   	<h5 class="Action">Remove all</h5>
+   	   </div>
+
+   	   <div class="Cart-Items">
+   	   	  <div class="image-box">
+   	   	  	<img src="logo.png" syle= "height:50px;width:50px">
+   	   	  </div>
+   	   	  <div class="about">
+   	   	  	<h1 class="title">Bamboo Straw</h1>
+   	   	  	<h3 class="subtitle">description of Bamboo Straw</h3>
+   	   	  </div>
+   	   	  <div class="counter">
+   	   	  	<div class="btn" onclick="increment()">+</div>
+   	   	  	<input id=demoInput type=number min=1 max=100>
+   	   	  	<div class="btn" onclick="decrement()">-</div>
+   	   	  </div>
+   	   	  <div class="prices">
+   	   	  	<div class="amount">$2.99</div>
+   	   	  	<div class="remove"><u>Remove</u></div>
+   	   	  </div>
+   	   </div>
+
+   	   <div class="Cart-Items pad">
+   	   	  <div class="image-box">
+   	   	  	<img src="logo.png" syle= "height:120px;width:50px">
+   	   	  </div>
+   	   	  <div class="about">
+   	   	  	<h1 class="title">Bamboo Chopstick 6pcs</h1>
+   	   	  	<h3 class="subtitle">description of bamboo chopstick</h3>
+   	   	  </div>
+   	   	  <div class="counter">
+            <div class="btn" onclick="increment()">+</div>
+            <input id=demoInput type=number>
+            <div class="btn" onclick="decrement()">-</div>
+        </div>
+   	   	  <div class="prices">
+   	   	  	<div class="amount">$3.19</div>
+   	   	  	<div class="save"><u>Save for later</u></div>
+   	   	  	<div class="remove"><u>Remove</u></div>
+   	   	  </div>
+   	   </div>
+   	 <hr> 
+   	 <div class="checkout">
+   	 <div class="total">
+   	 	<div>
+   	 		<div class="Subtotal">Sub-Total</div>
+   	 		<div class="items">2 items</div>
+   	 	</div>
+   	 	<div class="total-amount">$6.18</div>
+   	 </div>
+   	 <button class="button">Checkout</button></div>
+   </div>
+   <script>
+    function increment() {
+       document.getElementById('demoInput').stepUp();
+    }
+    function decrement() {
+       document.getElementById('demoInput').stepDown();
+    }
+ </script>
+</body>
+</html>
