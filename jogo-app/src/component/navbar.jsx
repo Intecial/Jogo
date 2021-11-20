@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
-
+import logo from './logo.png';
 class NavBar extends React.Component {
+    logoSize = {
+        width: 150,
+        height: 100
+    }
     render() { 
         return (<nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <img src={ logo } style={this.logoSize}></img>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
