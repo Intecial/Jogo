@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart UI</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="donasi.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+   <div class="CartContainer">
+   	   <div class="Header">
+   	   	<h3 class="Heading">DONATION</h3>
+   	   </div>
+
+   	   <div class="Cart-Items">
+   	   	  <div class="image-box">
+   	   	  	<img src="money.jpeg" syle= "height:120px;">
+   	   	  </div>
+   	   	  <div class="about">
+   	   	  	<h1 class="title">Donate Money</h1>
+   	   	  	<h3 class="subtitle">We plant 1 tree for every Rp 1.000</h3>
+   	   	  </div>
+   	   	  <div class="counter">
+   	   	  	<div class="btn" onclick="increment()">+</div>
+   	   	  	<input id=demoInput type=number step=1000 min=0>
+   	   	  	<div class="btn" onclick="decrement()">-</div>
+   	   	  </div>
+   	   </div>
+
+   	   <div class="Cart-Items pad">
+   	   	  <div class="image-box">
+   	   	  	<img src="sampah_plastik.jpeg" syle= "height:40px;width:10px;max-width:40px">
+   	   	  </div>
+   	   	  <div class="about">
+   	   	  	<h1 class="title">Donate Plastic Waste</h1>
+   	   	  </div>
+   	   	  <div class="counter">
+            <div class="btn" onclick="increment()">+</div>
+            <input id=demoInput type=number style="font-size:larger;"step=1 min=0>
+            <div class="btn" onclick="decrement()">-</div>
+        </div>
+ 
+   	   </div>
+          <div class="checkout">
+			  <a href ="../jess_temp/jogo-shop-index.html">
+            <button class="button" style="font-size: 30px;">CONFIRM DONATION</button></div></a>
+       </div>
+   <script>
+    function increment() {
+       document.getElementById('demoInput').stepUp();
+    }
+    function decrement() {
+       document.getElementById('demoInput').stepDown();
+    }
+ </script>
+</body>
+</html>

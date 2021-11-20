@@ -1,22 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './component/navbar'
-import LogInForm from './component/logInForm';
-import LogInPage from './component/page/logInPage';
-import SignInForm from './component/signInForm';
-import SignUp from './component/page/signUpPage';
 import Home from './component/page/home';
-import Card from './component/card';
-import Cards from './component/cards';
+import LogIn from './component/page/logInPage';
+import SignUp from './component/page/signUpPage';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Webpages from './component/page/webpages';
 // import logo from './component/logo.png';
 function App() {
   return (
-    <>
-      <div>
-        <Home/>
-        {/* <Cards/> */}
-      </div>
-    </>
+    <div>
+    <Webpages/>
+  </div>
   );
 }
 
