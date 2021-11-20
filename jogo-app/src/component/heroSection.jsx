@@ -21,12 +21,6 @@ const HeroSelection = () =>
                     <button href="" class="why-btn"><p>why</p></button> <button href="" class="donate-btn"><p>donate</p></button>
                 </div>
         </div>
-
-        <footer>
-            <div>
-                
-            </div>
-        </footer>
         
     </>);
 }
