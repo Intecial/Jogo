@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
-const Card = ({item}) =>
+import '../jogo-shop-nav.css';
+import '../jogo-shop-home.css';
+import Card1 from '../images/card1.jpg';
+const Card = () =>
 {
     
     return (
-    <div class="card" style={{width: 300, height: 400}}>
-        <img class="card-img-top" src={item} alt="Card image cap"></img>
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div className="product-card">
+        <div className="product-image">
+            <span className="disc-tag">50% off</span>
+            <img src={ Card1 } className="product-thumb" alt=""></img>
+            <button className="card-btn">add to wishlist</button>
+        </div>
+        <div className="product-info">
+            <h2 className="product-brand">brand</h2>
+            <p className="product-short-desc">blablabla</p>
+            <span className="price">$20</span> <span class="actual-price">$40</span>
         </div>
     </div>);
 }
