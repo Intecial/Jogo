@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section-par{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-par::before{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #094b65, transparent);
+    z-index: 10;
+}
+
+.section-par img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.text-par{
+    position: absolute;
+    color: #094b65;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    transform: translateY(-50%);
+}
+
+.text-span{
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    background: #fff;
+    color: #094b65;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+}
+
+.content{
+    position: relative;
+    padding: 100px;
+    background: #094b65;
+}
+
+.content h2{
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.content h3{
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.go-btn{
+    margin-top: 50px;
+    width: 40%;
+    position: relative;
+    border-radius: 30px;
+    opacity: 0.7;
+    margin-left: 60px;}
+
+.go-btn:hover{
+    opacity: 1;
+}
+
+.fact1 video{
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.fact1-para{
+    position: relative;
+    color: #fff;
+    width: 100%;
+    background: none;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.fact1-para p{
+    color: rgb(117, 234, 255);
+    margin-top: 15px;
+}
+
+.facts-pic{
+    width: 70%;
+    margin-left: 13%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+

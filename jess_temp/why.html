@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/why.css">
+    <title> PROTECT THE EARTH </title>
+</head>
+<body>
+    <section class="section-par">
+        <h2 class="text-par" id='text'><span class="text-span">it's our duty to protect our home,</span><br>Earth</h2>
+        <img src="images/bird1.png" id='bird1'>
+        <img src="images/bird2.png" id='bird2'>
+        <img src="images/forest.png" id='forest'>
+        <a href="#" id='btn'>Start</a>
+        <img src="images/rocks.png" id='rocks'>
+        <img src="images/water.png" id='water'>
+    </section>
+    <div class="content">
+        <a href="#" id='starts'></a>
+        <h2>Do you know ?</h2>
+        <div class="fact1">
+            <video src="videos/plastic-sea.mp4" autoplay loop muted></video>
+            <div class="fact1-para">
+                <h1>Indonesia is the second largest contributor of world's plastic waste after China.</h1>
+                <p class="fact1text">According to the UN, around 8 million tonnes of plastic are dumped into the ocean every year. 
+                Indonesia contributes more than 600,000 tonnes of that, estimates the Indonesian Institute of Sciences.</p>
+            </div>
+        </div>
+
+        <img src="images/facts.png" class="facts-pic">
+
+        <h3>What can you do to help ?</h3>
+        <div class="img-btn">
+        <a href="jogo-shop-index.html"><img src="images/to_shop.PNG" class="go-btn"></img></a>
+        <a href="../donasi/donasi.html"><img src="images/to_donation.PNG" class="go-btn"></a>
+        </div>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let btn = document.getElementById('btn');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * -1.5 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+        })
+
+    </script>
+</body>
+</html>
